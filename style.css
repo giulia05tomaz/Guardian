@@ -123,10 +123,12 @@ h6 {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	
 }
 
 .svg-hero{
 	width: 100%;
+
 }
 
 .banner-text {
@@ -515,6 +517,9 @@ input {
 }
 }
 @media all and (max-width:768px) {
+	.svg-hero {
+        display: none;
+    }
 .nav-scroll .navbar-brand img, .navbar-brand img {
 	transform: scale(0.75) !important;
 	-webkit-transform: scale(0.75) !important;
