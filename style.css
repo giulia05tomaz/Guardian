@@ -124,6 +124,11 @@ h6 {
 	bottom: 0;
 	width: 100%;
 }
+
+.svg-hero{
+	width: 100%;
+}
+
 .banner-text {
 	padding-right:80px;
 	margin:50px 0px 0px;
