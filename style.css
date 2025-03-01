@@ -516,6 +516,10 @@ input {
 }
 }
 @media all and (max-width:768px) {
+	.contact{
+		width: 90%; 
+		margin-left: 5%;
+	}
 	.svg-hero {
         display: none;
     }
