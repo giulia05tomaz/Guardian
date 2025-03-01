@@ -503,7 +503,7 @@ input {
 @media all and (max-width:991px) {
 .navbar .navbar-collapse {
 	overflow: auto;
-	background:  rgb(213, 198, 221);
+	background:  #003366;
 	color: #fff !important;
 	text-align: center;
 	padding: 10px 0;
@@ -613,4 +613,5 @@ h3 {
 
 .logo-1{
 	width: 180px;
+
 }
