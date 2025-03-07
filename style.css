@@ -270,20 +270,31 @@ h6 {
 	width: 700px;
 	max-width: 80%;
 }
-.video-popup .iframe-src {
-	width: 100%;
-	height: 0;
-	padding-top: 56.3%;
-	position: relative;
+  /* Estilos para o popup */
+  .video-popup {
 	display: none;
-}
-.video-popup .iframe-src iframe {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
+	background: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+  }
+  .video-popup iframe,
+  .video-popup video {
+	max-width: 90%;
+	max-height: 80%;
+  }
+  .video-popup .close-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+  }
 .single-feature {
 	margin-bottom: 80px;
 	margin-top: 40px;
@@ -297,8 +308,7 @@ h6 {
 .single-feature p {
 	font-size: 13px;
 }
-.icon-border {
-}
+
 .icon-border span {
 	display: block;
 	position: relative;
@@ -516,6 +526,9 @@ input {
 }
 }
 @media all and (max-width:768px) {
+	.phone{
+		padding-left: 30%;
+	}
 	.contact{
 		width: 90%; 
 		margin-left: 5%;

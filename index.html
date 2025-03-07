@@ -42,11 +42,19 @@
             <p class="banner-text white">Ninguém deve se sentir desprotegido. Por isso, a Guardian oferece ajuda imediata de militares qualificados, 24 horas por dia. Basta um toque no seu dispositivo ou app para acionar um Guardião, que chegará em minutos para garantir sua segurança, com discrição e eficiência</p>
             <ul>
             
+              <div class="col-md-4">
+                <div class="section-content text-center">
+                  <ul>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeE3fLFgbgbcZz4dqqgw7iz5rRcz3s7mn-e_JILgMXw_SCyXA/viewform"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+        
+                  </ul>
+                </div>
+              </div>
               
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.png" class="img-fluid wow fadeInUp" style="width: 250px;"/> </div>
+        <div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.png" class="img-fluid wow fadeInUp phone" style="width: 250px;"/> </div>
       </div>
     </div>
   </div>
@@ -123,23 +131,26 @@ Com a Guardian, você não depende apenas de alarmes ou câmeras: tem profiss
 </section>
 <!-------About End-------> 
 
-<!-------Video Start------->
-<section class="video-section prelative text-center white">
-  <div class="section-padding video-overlay" >
-    <div class="container">
-      <h3>Assista agora</h3>
-      <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
-      <div class="video-popup">
-        <div class="video-src">
-          <div class="iframe-src">
-            <iframe src="images/Vídeo do WhatsApp de 2025-02-28 à(s) 21.28.32_3d01ec7b.mp4" allowfullscreen> <video src=""></video></iframe>
+  <!-- Seção do vídeo -->
+  <section class="video-section prelative text-center white">
+    <div class="section-padding video-overlay">
+      <div class="container">
+        <h3>Assista agora</h3>
+        <i class="fa fa-play" id="video-icon" aria-hidden="true" style="cursor: pointer; font-size: 40px;"></i>
+
+        <!-- Popup do vídeo -->
+        <div class="video-popup" id="video-popup">
+          <div class="video-src">
+            <div>
+              <!-- Video -->
+              <video id="video" src="images/Vídeo do WhatsApp de 2025-02-28 à(s) 21.28.32_3d01ec7b.mp4" controls></video>
+            </div>
+            <span class="close-btn" id="close-video">&times;</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-------Video End-------> 
+  </section>
 
 <!-------Features Start------->
 <section class="feature section-padding" data-scroll-index='2'>
