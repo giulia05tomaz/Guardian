@@ -474,30 +474,34 @@ Com a Guardian, você não depende apenas de alarmes ou câmeras: tem profiss
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
 <script>
-	wow = new WOW();
-	wow.init();
-$(document).ready(function(e) {
+ $(document).ready(function () {
+      var videoPopup = $('#video-popup');
+      var video = $('#video')[0];
+      var videoIcon = $('#video-icon');
+      var closeBtn = $('#close-video');
 
-	$('#video-icon').on('click',function(e){
-	e.preventDefault();
-	$('.video-popup').css('display','flex');
-	$('.iframe-src').slideDown();
-	});
-	$('.video-popup').on('click',function(e){
-	var $target = e.target.nodeName;
-	var video_src = $(this).find('iframe').attr('src');
-	if($target != 'IFRAME'){
-	$('.video-popup').fadeOut();
-	$('.iframe-src').slideUp();
-	$('.video-popup iframe').attr('src'," ");
-	$('.video-popup iframe').attr('src',video_src);
-	}
-	});
+      // Abre o popup e começa o vídeo
+      videoIcon.on('click', function () {
+        videoPopup.css('display', 'flex');
+        video.play();
+      });
 
-	$('.slider').bxSlider({
-	pager: false
-	});
-});
+      // Fecha o popup e pausa o vídeo
+      closeBtn.on('click', function () {
+        videoPopup.css('display', 'none');
+        video.pause();  // Pausa o vídeo
+        video.currentTime = 0;  // Reseta o vídeo para o início
+      });
+
+      // Fecha o popup se clicar fora do vídeo
+      $(window).on('click', function (e) {
+        if ($(e.target).is(videoPopup)) {
+          videoPopup.css('display', 'none');
+          video.pause();  // Pausa o vídeo
+          video.currentTime = 0;  // Reseta o vídeo para o início
+        }
+      });
+    });
     
 $(window).on("scroll",function () {
 
